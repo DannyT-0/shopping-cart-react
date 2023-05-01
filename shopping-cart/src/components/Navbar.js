@@ -10,6 +10,9 @@ export default function Navbar() {
 				<li>
 					<a href="/shop">Shop</a>
 				</li>
+				<li>
+					<a href="/cart">Cart</a>
+				</li>
 			</ul>
 		</div>
 	);
