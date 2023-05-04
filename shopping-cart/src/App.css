@@ -5,8 +5,11 @@
 
 .nav-bar{
   display: flex;
+  border: 1px black solid;
   list-style-type: none;
   justify-content: space-around;
+  margin-bottom: 15px;
+ 
 }
 
 .item-container{
@@ -15,9 +18,15 @@
   grid-template-rows: 1fr 1fr;
 }
 
+/* .item-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
 .shopping-cart-item{
   width: 200px;
- 
   border: 1px solid black;
   
 }

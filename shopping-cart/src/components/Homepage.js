@@ -4,7 +4,7 @@ import homePageVans from "/Users/danny/Desktop/the_odin_project/react-section/sh
 export default function Homepage() {
 	return (
 		<div>
-			<h1>Homepage</h1>
+			<h1>The Not So Real Vans Shop</h1>
 			<img src={homePageVans} alt="shoes" />
 		</div>
 	);
