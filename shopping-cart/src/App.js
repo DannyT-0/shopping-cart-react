@@ -1,32 +1,33 @@
-import "./App.css";
+// import "./App.css";
 // import Homepage from "./components/Homepage";
 // import Navbar from "./components/Navbar";
 // import Shop from "./components/Shop";
 // import Cart from "./components/Cart";
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+// import React from "react";
+// import RouteSwitch from "./components/RouteSwitch";
 
-function App() {
-	function testClick() {
-		setCartStatus();
-	}
+// function App() {
+// 	const [shoeCart, setShoeCart] = React.useState([]);
 
-	const [cartStatus, setCartStatus] = React.useState([]);
-	console.log(cartStatus);
+// 	const shopItems = ShopData.map((items) => {
+// 		function onClick() {
+// 			console.log(items);
+// 		}
 
-	// return (
-	// 	<div>
-	// 		<Navbar />
-	// 		<BrowserRouter>
-	// 			<Routes>
-	// 				<Route path="/homepage" element={<Homepage />} />
-	// 				<Route path="/shop" element={<Shop handleClick={testClick} />} />
-	// 				<Route path="/cart" element={<Cart />} />
-	// 			</Routes>
-	// 		</BrowserRouter>
-	// 	</div>
-	// );
-}
+// 		return (
+// 			<Shop
+// 				imgSource={items.imgSource}
+// 				altText={items.altText}
+// 				handleClick={onClick}
+// 				price={items.price}
+// 				incart={items.incart}
+// 			/>
+// 		);
+// 	});
 
-export default App;
+// 	return <RouteSwitch />;
+// }
+
+// export default App;
