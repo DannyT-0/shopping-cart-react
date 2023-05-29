@@ -12,18 +12,22 @@
  
 }
 
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+
+}
+
 .item-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
-/* .item-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-} */
 
 .shopping-cart-item{
   width: 200px;

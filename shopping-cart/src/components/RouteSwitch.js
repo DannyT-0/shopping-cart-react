@@ -6,21 +6,24 @@ import Homepage from "./Homepage";
 import Cart from "./Cart";
 import Navbar from "./Navbar";
 import ShopData from "./ShopData";
+import Footer from "./Footer";
 
 export default function RouteSwitch() {
 	const [shoeCart, setShoeCart] = React.useState([]);
 	console.log(shoeCart);
 
+	// const fullPrice = shoeCart.map((prices) => {
+	// 	console.log(prices.price);
+	// });
+
 	const cartItems = shoeCart.map((items) => {
 		return (
-			// items.incart && (
 			<Cart
 				imgSource={items.imgSource}
 				altText={items.altText}
 				price={items.price}
 				incart={items.incart}
 			/>
-			// )
 		);
 	});
 
@@ -49,6 +52,8 @@ export default function RouteSwitch() {
 					<Route path="/shop" element={shopItems} />
 					<Route path="/cart" element={cartItems} />
 				</Routes>
+				{/* {fullPrice} */}
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);
