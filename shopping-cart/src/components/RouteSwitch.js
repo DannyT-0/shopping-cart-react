@@ -12,9 +12,11 @@ export default function RouteSwitch() {
 	const [shoeCart, setShoeCart] = React.useState([]);
 	console.log(shoeCart);
 
-	// const fullPrice = shoeCart.map((prices) => {
-	// 	console.log(prices.price);
-	// });
+	const fullPrice = shoeCart.map((prices) => {
+		return prices.price;
+	});
+
+	console.log(fullPrice);
 
 	const cartItems = shoeCart.map((items) => {
 		return (
@@ -39,6 +41,7 @@ export default function RouteSwitch() {
 				handleClick={onClick}
 				price={items.price}
 				incart={items.incart}
+				className={"item-container"}
 			/>
 		);
 	});
