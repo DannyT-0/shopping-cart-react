@@ -1,6 +1,6 @@
 import React from "react";
 import "/Users/danny/Desktop/the_odin_project/react-section/shopping-cart-react/shopping-cart/src/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Shop from "./Shop";
 import Homepage from "./Homepage";
 import Cart from "./Cart";
@@ -10,13 +10,15 @@ import Footer from "./Footer";
 
 export default function RouteSwitch() {
 	const [shoeCart, setShoeCart] = React.useState([]);
-	console.log(shoeCart);
 
 	const fullPrice = shoeCart.map((prices) => {
 		return prices.price;
 	});
 
-	console.log(fullPrice);
+	let totalPrice = 0;
+	fullPrice.forEach((num) => {
+		totalPrice += num;
+	});
 
 	const cartItems = shoeCart.map((items) => {
 		return (
@@ -48,16 +50,15 @@ export default function RouteSwitch() {
 
 	return (
 		<div>
-			<BrowserRouter>
+			<HashRouter>
 				<Navbar />
 				<Routes>
 					<Route path="/homepage" element={<Homepage />} />
 					<Route path="/shop" element={shopItems} />
 					<Route path="/cart" element={cartItems} />
 				</Routes>
-				{/* {fullPrice} */}
-				<Footer />
-			</BrowserRouter>
+				<Footer fullPrice={totalPrice} />
+			</HashRouter>
 		</div>
 	);
 }
