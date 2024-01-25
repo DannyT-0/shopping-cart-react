@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shopping-cart-react/static/css/main.a3bb1129.css",
+    "main.js": "/shopping-cart-react/static/js/main.074e93da.js",
+    "static/media/Vans-Slip-On-Checkerboard-2019-Product.webp": "/shopping-cart-react/static/media/Vans-Slip-On-Checkerboard-2019-Product.68713af5e109ac5ada4c.webp",
+    "static/media/blackwhitecush.webp": "/shopping-cart-react/static/media/blackwhitecush.cae782898c86073737a5.webp",
+    "static/media/hightopblack.jpg": "/shopping-cart-react/static/media/hightopblack.2a2a80760b24267fadee.jpg",
+    "static/media/homepagepic.webp": "/shopping-cart-react/static/media/homepagepic.0050eee5ef4020811676.webp",
+    "static/media/glitterpink.jpeg": "/shopping-cart-react/static/media/glitterpink.723f208fc808027d3bc5.jpeg",
+    "static/media/redcheck.webp": "/shopping-cart-react/static/media/redcheck.0375d4f501ede2c61da7.webp",
+    "static/media/greyblacklow.jpeg": "/shopping-cart-react/static/media/greyblacklow.24b7e7df03d48bd8067d.jpeg",
+    "index.html": "/shopping-cart-react/index.html",
+    "main.a3bb1129.css.map": "/shopping-cart-react/static/css/main.a3bb1129.css.map",
+    "main.074e93da.js.map": "/shopping-cart-react/static/js/main.074e93da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3bb1129.css",
+    "static/js/main.074e93da.js"
+  ]
+}
